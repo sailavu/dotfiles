@@ -23,8 +23,10 @@ rbenv rehash
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-echo 'HOMEBREW_CASK_OPTS="--appdir=/Applications"' >> ~/.bash_profile
-echo 'HOMEBREW_CASK_OPTS="--appdir=/Applications"' >> ~/.zshrc
+
+echo 'HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/etc/Caskroom"' >> ~/.bash_profile
+echo 'HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/etc/Caskroom"' >> ~/.zshrc
+source ~/.bash_profile
 source ~/.zshrc
 
 brew tap Homebrew/bundle
