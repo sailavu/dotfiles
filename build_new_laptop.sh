@@ -30,9 +30,7 @@ brew install 'redis'
 brew install 'mysql'
 brew install 'postgresql'
 brew install 'rbenv'
-rbenv rehash
 brew install 'rbenv-build'
-rbenv rehash
 
 touch ~/.bash_profile || exit
 grep -q -F 'export PATH="$HOME/.rbenv/bin:$PATH"' ~/.bash_profile || echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
@@ -44,6 +42,7 @@ grep -q -F 'export PATH="$HOME/.rbenv/bin:$PATH"' ~/.zshrc || echo 'export PATH=
 grep -q -F 'eval "$(rbenv init -)"' ~/.zshrc || echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 source ~/.zshrc
 
+rbenv rehash
 
 brew tap 'homebrew/dupes'
 brew tap 'caskroom/versions'
