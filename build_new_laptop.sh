@@ -9,6 +9,11 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Install Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# Install Oh-my-zsh
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+# Set zsh as the default shell
+chsh -s $(chsh -l | grep "zsh" -m 1)
+
 # Install software updates
 softwareupdate --install --all
 
@@ -71,7 +76,7 @@ brew cask install 'the-unarchiver'
 brew cask install 'microsoft-office'
 brew cask install 'totalfinder'
 brew cask install 'commandq'
-brew cask install 'lexiloader'
+#brew cask install 'lexiloader'
 
 brew update && brew upgrade brew-cask && brew cleanup
 
@@ -102,9 +107,9 @@ defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</
 <string>/Applications/Adobe Reader.app</string><key>_CFURLStringType</key>
 <integer>0</integer></dict></dict></dict>'
 
-defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key>
-<string>/Applications/LexiLoader.app</string><key>_CFURLStringType</key>
-<integer>0</integer></dict></dict></dict>'
+#defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key>
+#<string>/Applications/LexiLoader.app</string><key>_CFURLStringType</key>
+#<integer>0</integer></dict></dict></dict>'
 
 
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key>
