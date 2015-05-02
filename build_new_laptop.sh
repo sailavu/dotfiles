@@ -31,7 +31,7 @@ brew install 'redis'
 brew install 'mysql'
 brew install 'postgresql'
 brew install 'rbenv'
-brew install 'rbenv-build'
+brew install 'ruby-build'
 
 touch ~/.bash_profile || exit
 grep -q -F 'export PATH="$HOME/.rbenv/bin:$PATH"' ~/.bash_profile || echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
