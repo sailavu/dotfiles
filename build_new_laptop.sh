@@ -12,7 +12,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 # Install Oh-my-zsh
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 # Set zsh as the default shell
-chsh -s $(chsh -l | grep "zsh" -m 1)
+chsh -s $(which zsh)
 
 # Install software updates
 softwareupdate --install --all
