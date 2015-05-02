@@ -76,9 +76,9 @@ brew cask install 'the-unarchiver'
 brew cask install 'microsoft-office'
 brew cask install 'totalfinder'
 brew cask install 'commandq'
-#brew cask install 'lexiloader'
+brew cask install 'lexiloader'
 
-brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
+brew update && brew cleanup && brew cask cleanup
 
 ./.osx
 
@@ -107,9 +107,9 @@ defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</
 <string>/Applications/Adobe Reader.app</string><key>_CFURLStringType</key>
 <integer>0</integer></dict></dict></dict>'
 
-#defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key>
-#<string>/Applications/LexiLoader.app</string><key>_CFURLStringType</key>
-#<integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key>
+<string>/Applications/LexiLoader.app</string><key>_CFURLStringType</key>
+<integer>0</integer></dict></dict></dict>'
 
 
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key>
