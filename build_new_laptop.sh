@@ -80,6 +80,7 @@ brew cask install 'lexiloader'
 
 brew update && brew cleanup && brew cask cleanup
 
+chmod +x .osx
 ./.osx
 
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key>
