@@ -78,7 +78,7 @@ brew cask install 'totalfinder'
 brew cask install 'commandq'
 #brew cask install 'lexiloader'
 
-brew update && brew upgrade brew-cask && brew cleanup
+brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
 
 ./.osx
 
