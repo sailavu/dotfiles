@@ -83,51 +83,7 @@ brew update && brew cleanup && brew cask cleanup
 chmod +x .osx
 ./.osx
 
-defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key>
-<string>/Applications/Google Chrome.app</string><key>_CFURLStringType</key>
-<integer>0</integer></dict></dict></dict>'
-
-
-defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key>
-<string>/Applications/Safari.app</string><key>_CFURLStringType</key>
-<integer>0</integer></dict></dict></dict>'
-
-defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key>
-<string>/Applications/Microsoft Office 2011/Microsoft Excel.app</string><key>_CFURLStringType</key>
-<integer>0</integer></dict></dict></dict>'
-
-defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key>
-<string>/Applications/Microsoft Office 2011/Microsoft Word.app</string><key>_CFURLStringType</key>
-<integer>0</integer></dict></dict></dict>'
-
-defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key>
-<string>/Applications/Preview.app</string><key>_CFURLStringType</key>
-<integer>0</integer></dict></dict></dict>'
-
-defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key>
-<string>/Applications/Adobe Reader.app</string><key>_CFURLStringType</key>
-<integer>0</integer></dict></dict></dict>'
-
-defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key>
-<string>/Applications/LexiLoader.app</string><key>_CFURLStringType</key>
-<integer>0</integer></dict></dict></dict>'
-
-
-defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key>
-<string>/Applications/Eclipse.app</string><key>_CFURLStringType</key>
-<integer>0</integer></dict></dict></dict>'
-
-defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key>
-<string>/Applications/Sublime Text.app</string><key>_CFURLStringType</key>
-<integer>0</integer></dict></dict></dict>'
-
-defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key>
-<string>/Applications/System Preferences.app</string><key>_CFURLStringType</key>
-<integer>0</integer></dict></dict></dict>'
-
-killall -HUP Dock
-
-reboot
+# Reboot the computer
 
 # Manual configuration
 
