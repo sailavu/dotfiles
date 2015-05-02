@@ -60,8 +60,8 @@ brew cask install 'google-hangouts'
 brew cask install 'java'
 brew cask install 'spectacle'
 brew cask install 'caskroom/homebrew-cask/yemuzip'
-brew cask install 'eclipse-platform' --version 4.3
-brew cask install 'eclipse-ide' --version 4.3
+brew cask install 'eclipse-platform'
+brew cask install 'eclipse-ide'
 brew cask install 'harvest'
 brew cask install 'adobe-air'
 brew cask install 'spotify'
