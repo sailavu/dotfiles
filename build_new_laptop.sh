@@ -35,7 +35,7 @@ brew install 'ruby-build'
 
 touch ~/.bash_profile || exit
 grep -q -F 'export PATH="$HOME/.rbenv/bin:$PATH"' ~/.bash_profile || echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
-grep -q -F 'eval "$(rbenv init -)"' ~/.bash_profile || echo 'eval "$(rbenv init -)"' >> ~/.bash_profile	
+grep -q -F 'eval "$(rbenv init -)"' ~/.bash_profile || echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 source ~/.bash_profile
 
 touch ~/.zshrc || exit
@@ -66,7 +66,6 @@ brew cask install 'adobe-air'
 brew cask install 'spotify'
 brew cask install 'sourcetree'
 brew cask install 'karabiner'
-brew cask install 'postgres'
 brew cask install 'mysqlworkbench'
 brew cask install 'atom'
 brew cask install 'virtualbox'
@@ -91,5 +90,3 @@ chmod +x .osx
 # Configure Spectacle to launch at Login
 # TotalFinder
 # In the sidebar show spuser; hide iCloud Drive
-
-
