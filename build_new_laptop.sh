@@ -78,8 +78,8 @@ brew cask install 'lexiloader'
 
 brew update && brew cleanup && brew cask cleanup
 
-# chmod +x .osx
-# ./.osx
+chmod +x .osx
+./.osx
 
 # Reboot the computer
 
